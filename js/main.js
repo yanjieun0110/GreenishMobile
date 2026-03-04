@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   /* 레이아웃 */
-  fetch('../json/main.json')
+  fetch('./json/main.json')
     .then(response => response.json())
     .then(data => {
       for (let category in data) {

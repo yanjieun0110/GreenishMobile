@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }); //뒤로가기
 
   /* review */
-  fetch('../json/review.json')
+  fetch('./json/review.json')
     .then(res => res.json())
     .then(data => {
 
