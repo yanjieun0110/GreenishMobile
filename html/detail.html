@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greenish</title>
+  <link rel="shortcut icon" href="../img/logo_s_NEWcopy.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="../css/detail.css">
+
+  <!--jQuery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="../js/detail.js"></script>
+
+  <!--scrollTo-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Nanum Gothic", sans-serif;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    li {
+      list-style: none;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header class="header" id="header">
+    <div class="left">
+      <a href="#" class="back"><i class="fa-solid fa-angle-left"></i></a>
+
+      <a href="../index.html" class="logo">
+        <img src="../img/logo_s_NEWcopy.png" alt="로고">
+      </a>
+    </div>
+
+    <div class="h_icon">
+      <i class="fa-solid fa-magnifying-glass" id="search"></i>
+      <i class="fa-solid fa-bars" id="hambergur"></i>
+    </div>
+  </header> <!--header-->
+
+
+  <section class="search_wrap">
+    <header class="s_header" id="s_header">
+      <p>검색</p>
+      <div class="s_close"><i class="fa-solid fa-xmark"></i></div>
+    </header> <!--s_header-->
+
+    <div class="search_box">
+      <input type="search" placeholder="검색어를 입력하세요">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+
+    <hr>
+
+    <p class="s_title">인기 검색어</p>
+    <ol id="pop">
+      <li><a href="../html/sub.html">공기정화</a></li>
+      <li><a href="../html/sub.html">개업</a></li>
+      <li><a href="../html/sub.html">집들이</a></li>
+      <li><a href="../html/sub.html">화분커버</a></li>
+    </ol>
+
+    <p class="s_title">베스트</p>
+    <ul id="best">
+      <li><a href="./detail.html">
+        <div class="best_img"><img src="../img/best01.jpg" alt="베스트01"></div>
+        <div class="txt">
+          <p>[식물+화분커버] 나비란 공기정화식물</p>
+          <p>32,000원<span>23%</span></p>
+        </div>
+      </a></li>
+      <li><a href="./detail.html">
+        <div class="best_img"><img src="../img/best02.jpg" alt="베스트02"></div>
+        <div class="txt">
+          <p>박쥐란 현무암 화산석 돌화분</p>
+          <p>48,000원<span>12%</span></p>
+        </div>
+      </a></li>
+      <li><a href="./detail.html">
+        <div class="best_img"><img src="../img/best03.jpg" alt="베스트03"></div>
+        <div class="txt">
+          <p>[식물+화분커버] 이오난사 공기정화식물</p>
+          <p>22,000원<span>12%</span></p>
+        </div>
+      </a></li>
+      <li><a href="./detail.html">
+        <div class="best_img"><img src="../img/best04.jpg" alt="베스트04"></div>
+        <div class="txt">
+          <p>필로덴드론 공기정화식물</p>
+          <p>35,900원</p>
+        </div>
+      </a></li>
+    </ul>
+  </section> <!--search_wrap-->
+
+
+
+  <nav class="ham_outer">
+    <div class="ham_top">
+      <p class="ham_title">Greenish <span><i class="fa-solid fa-xmark" id="ham_close"></i></span></p>
+      <p>로그인 후 더 많은 기능을 이용할 수 있어요! </p>
+      <div class="top_btn">
+        <button type="button" class="login">로그인</button>
+        <button type="button" class="join">회원가입</button>
+      </div>
+    </div> <!--ham_top-->
+
+    <hr>
+
+    <div class="lnb_wrap">
+      <ul class="lnb_title" id="lnb_title">
+        <li class="lnb_chk">베스트</li>
+        <li>전체상품</li>
+        <li>식물</li>
+        <li>화분</li>
+        <li>선물/세트</li>
+        <li>쇼퍼블</li>
+        <li>브랜드 소개</li>
+        <li>고객센터</li>
+      </ul>
+
+      <div class="lnb_sub" id="lnb_sub">
+        <ul class="best_gnb" id="best_gnb">
+          <li><a href="./sub.html">베스트</a></li>
+        </ul>
+
+        <ul class="all_gnb" id="all_gnb">
+          <li><a href="./sub.html">전체상품</a></li>
+        </ul>
+
+        <ul class="plant" id="plant">
+          <li><a href="./sub.html">전체</a></li>
+          <li><a href="./sub.html">행잉식물</a></li>
+          <li><a href="./sub.html">소형식물</a></li>
+          <li><a href="./sub.html">공기정화</a></li>
+          <li><a href="./sub.html">선인장/다육식물</a></li>
+        </ul>
+
+        <ul class="pot" id="pot">
+          <li><a href="./sub.html">전체</a></li>
+          <li><a href="./sub.html">단독화분</a></li>
+          <li><a href="./sub.html">화분커버</a></li>
+        </ul>
+
+        <ul class="set_gnb" id="set_gnb">
+          <li><a href="./sub.html">전체</a></li>
+          <li><a href="./sub.html">식물+커버</a></li>
+          <li><a href="./sub.html">선물용식물</a></li>
+        </ul>
+
+        <ul class="shoppable" id="shoppable">
+          <li><a href="./sub.html">쇼퍼블</a></li>
+        </ul>
+
+        <ul class="brand" id="brand">
+          <li><a href="./sub.html">브랜드 소개</a></li>
+        </ul>
+
+        <ul class="center" id="center">
+          <li><a href="./sub.html">고객센터</a></li>
+        </ul>
+      </div>
+    </div> <!--lnb_wrap-->
+  </nav> <!--ham_outer-->
+
+
+  <ul class="breadcrumb">
+    <li><a href="../index.html">홈</a></li>
+    <li><i class="fa-solid fa-chevron-right"></i></li>
+    <li><a href="./sub.html">식물</a></li>
+    <li><i class="fa-solid fa-chevron-right"></i></li>
+    <li><a href="./sub.html#tab04">공기정화</a></li>
+  </ul>
+
+  <section class="detail_top">
+    <div class="big_img"></div>
+    <ul class="small_img">
+      <li class="small01"><img src="../img/detail_pd01.jpg" alt="디테일 스몰"></li>
+
+      <li class="small02"><img src="../img/detail_pd02.jpg" alt="디테일 스몰"></li>
+
+      <li class="small03"><img src="../img/detail_pd03.jpg" alt="디테일 스몰"></li>
+
+      <li class="small04"><img src="../img/detail_pd04.jpg" alt="디테일 스몰"></li>
+
+      <li class="small05"><img src="../img/detail_pd05.jpg" alt="디테일 스몰"></li>
+    </ul>
+
+    <section class="info_box">
+      <div class="star_wrap">
+        <div class="star">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div><!--star-->
+        <a href="./detail.html#review">40개의 리뷰</a>
+      </div> <!--star_wrap-->
+
+      <div class="price_info">
+        <p class="p_name">스프링골풀 미니화분 칼라 손잡이</p>
+        <del>34,000원</del>
+        <p><span>30%</span>24,000원</p>
+      </div>
+    </section>
+
+    <a href="./html/sub.html" class="event_banner">
+      <img src="../img/event_banner.png" alt="이벤트 베너">
+    </a>
+  </section> <!--detail_top-->
+
+  <hr>
+
+
+  <ul class="move_bar">
+    <li class="bar_chk"><a href="#data">상품정보</a></li>
+    <li><a href="#review">리뷰</a></li>
+    <li><a href="#delivery">배송/환불</a></li>
+    <li><a href="#recommend">추천</a></li>
+  </ul>
+
+  <section class="data" id="data">
+    <div class="data_img">
+      <div class="data01" id="data01">
+        <img src="../img/detail_ifo01.png" alt="상세이미지1">
+      </div>
+
+      <div class="data02">
+        <img src="../img/detail_info02.png" alt="상세이미지2">
+      </div>
+    </div>
+
+    <button class="data_btn" type="button">
+      <p>상품설명 더보기</p>
+      <i class="fa-solid fa-angle-down"></i>
+    </button>
+  </section> <!--data-->
+
+
+
+  <section class="review" id="review">
+    <p class="r_title">REVIEW<span class="r_sub">리뷰<span>40</span></span></p>
+
+    <div class="review_top">
+      <div class="star_wrap">
+        <div class="star">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div><!--star-->
+        <p>4</p>
+      </div> <!--star_wrap-->
+
+      <div class="top_right">
+        <div class="rating05 rating">
+          <span>5</span>
+          <div class="r_bar">
+            <div class="r_fill"></div>
+          </div>
+          <span>25</span>
+        </div><!--rating05-->
+        <div class="rating04 rating">
+          <span>4</span>
+          <div class="r_bar">
+            <div class="r_fill"></div>
+          </div>
+          <span>15</span>
+        </div><!--rating04-->
+        <div class="rating03 rating">
+          <span>3</span>
+          <div class="r_bar">
+            <div class="r_fill"></div>
+          </div>
+          <span>0</span>
+        </div><!--rating03-->
+        <div class="rating02 rating">
+          <span>2</span>
+          <div class="r_bar">
+            <div class="r_fill"></div>
+          </div>
+          <span>0</span>
+        </div><!--rating02-->
+        <div class="rating01 rating">
+          <span>1</span>
+          <div class="r_bar">
+            <div class="r_fill"></div>
+          </div>
+          <span>0</span>
+        </div><!--rating01-->
+      </div> <!--top_right-->
+    </div> <!--review_top-->
+
+    <div class="sel_box">
+      <select id="s_star">
+        <option value="">별점</option>
+        <option value="star5">5점</option>
+        <option value="star4">4점</option>
+        <option value="star3">3점</option>
+        <option value="star2">2점</option>
+        <option value="star1">1점</option>
+      </select>
+
+      <select id="s_option">
+        <option value="">옵션</option>
+        <option value="op01">별점 높은 순</option>
+        <option value="op02">별점 낮은 순</option>
+        <option value="op03">사진 리뷰만 보기</option>
+      </select>
+
+      <button type="button" id="r_btn">리뷰 남기기</button>
+    </div> <!--sel_box-->
+
+    <div class="review_inner"></div>
+
+    <ul class="pagination">
+      <li><i class="fa-solid fa-angles-left"></i></li>
+      <li><i class="fa-solid fa-angle-left"></i></li>
+      <li class="num1 num num_chk">1</li>
+      <li class="num2 num">2</li>
+      <li class="num3 num">3</li>
+      <li><i class="fa-solid fa-angle-right"></i></li>
+      <li><i class="fa-solid fa-angles-right"></i></li>
+    </ul> <!--pagination-->
+  </section> <!--review-->
+
+  <section class="review_write">
+    <div class="w_top">
+      <p class="w_title">REVIEW 리뷰</p>
+      <i class="fa-solid fa-xmark" id="w_xBtn"></i>
+    </div>
+
+    <div class="w_info">
+      <div class="w_img">
+        <img src="../img/detail_pd01.jpg" alt="스프링골풀">
+      </div>
+
+      <div class="w_right">
+        <p class="w_name">스프링골풀 미니화분 칼라팟</p>
+
+        <ul class="w_act">
+          <li>식물: 손잡이 블루</li>
+          <li>수량: 1</li>
+          <li>추가상품(선택): 안함</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="q_title">이 상품 어떠셨나요?</p>
+    <div class="w_star">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+    </div><!--w_star-->
+
+    <p class="q_title">사진첨부 (선택 /최대 1장)</p>
+    <button type="button" class="photo_btn">
+      <i class="fa-regular fa-image"></i>
+      <p>사진 첨부하기</p>
+    </button>
+
+    <p class="q_title">후기작성</p>
+    <textarea id="write_box" placeholder="다른 분들이 도움을 받을 수 있도록 상품후기를 솔직하게 작성해주세요.(최소10자 이상, 최대 500자 이하)" required
+      minlength="10" maxlength="500"></textarea>
+
+    <div class="agree">
+      <p>상품과 관련없는 사진이나 내용, 동일문자 반복 등의 부적합한 내용은 삭제될 수 있습니다.</p>
+      <input type="checkbox" id="agree_terms" required>
+      <label for="agree_terms">리뷰정책에 동의합니다.</label>
+    </div> <!--agree-->
+
+    <button type="button" class="submit">저장하기</button>
+  </section> <!--review_write-->
+
+  <div class="toast_outer">
+    <div class="toast">
+      <p></p>
+    </div>
+  </div>
+
+
+  <section class="delivery" id="delivery">
+    <p class="d_title">배송</p>
+    <div class="table">
+      <ul>
+        <li>배송</li>
+        <li>일반택배</li>
+      </ul>
+
+      <ul>
+        <li>배송비</li>
+        <li>3,500원(50,000원 이상 무료 배송)</li>
+      </ul>
+
+      <ul>
+        <li>배송불가 지역</li>
+        <li>제주도 및 도서산간지역은 파손위험이 있어 배송이 불가함</li>
+      </ul>
+    </div> <!--table-->
+
+    <div class="d_sub">
+      <p class="sub_tt">배송</p>
+      <ul class="sub_list01">
+        <li>
+          <p>월~목 순차적으로 발송 진행하고 있습니다.</p>
+          <span>금요일 및 공휴일이 겹친 날은 식물의 안전을 위해 식물을 발송하지 않습니다.</span>
+        </li>
+        <li>
+          <p>계절에 따라 당일 발송이 조정될 수 있습니다. 해당 사항은 미리 공지드리도록 하겠습니다.</p>
+          <span>(예상 배송 8~9월/ 12~2월)</span>
+        </li>
+        <li>
+          <p>배송은 발송일로 기준으로 다음날 받아 보실 수 있으나 택배사의 사정으로 1~2일 정도 지연될 수 있습니다.</p>
+        </li>
+        <li>
+          <p>꼼꼼하게, 흙이 안쏟아질 만큼 최대한 단단히 포장하여 배송해 드릴 수 있도록 꼼꼼하게 포장을 하고 있습니다.</p>
+        </li>
+      </ul> <!--d_sub-->
+    </div> <!--d_sub-->
+
+    <div class="d_sub">
+      <p class="sub_tt">식물 유의사항 및 화분 관련 유의사항</p>
+      <ul class="sub_list01">
+        <li>
+          <p>식물은 한 번 배송되는 식물로 특성상 모두 다른 크기와 수형을 가지고 있습니다.</p>
+        </li>
+        <li>
+          <p>식물의 하엽이나 갈변, 상처는 자연스러운 현상입니다.</p>
+        </li>
+        <li>
+          <p>꼼꼼하게 포장을 진행하기는 하나 배송 중에 작은 손상 혹은 흙이 유실되는 부분이 발생할 수 있습니다. 여러분의 품을 함께 동봉 드리니 소심스럽게 채워주세요.</p>
+        </li>
+        <li>
+          <p>촬영 샘플과 최대한 비슷한 컬러로 생산이 진행되지만 모니터의 해상도에 따라 미세한 변화가 있을 수 있습니다.</p>
+        </li>
+      </ul> <!--d_sub-->
+    </div> <!--d_sub-->
+
+
+    <p class="d_title">교환/환불</p>
+    <div class="table">
+      <ul>
+        <li>반품 배송비</li>
+        <li>5,000원 (최초 배송비가 무료인 경우 10,000원 부과)</li>
+      </ul>
+
+      <ul>
+        <li>교환배송비</li>
+        <li>10,000원</li>
+      </ul>
+
+      <ul>
+        <li>보내실 곳</li>
+        <li>(123-123) 부산광역시 부산진구 양정동 123번길 45</li>
+      </ul>
+    </div> <!--table-->
+
+    <div class="d_sub">
+      <p class="sub_tt">반품/교환 사유에 따른 요청 가능 기간</p>
+      <span class="sub_su">
+        반품 시 먼저 판매자와 연락하셔서 반품사유, 택배비, 배송비, 반품지 주소 등을 협의하신 후 반품상품을 발송해 주시기 바랍니다.
+      </span>
+      <ul class="sub_list02">
+        <li>
+          <p>구매자의 단순 변심은 상품 수령 후 7일 이내 (구매자 반품배송비 부담)</p>
+        </li>
+        <li>
+          <p>표시/광고와 상이, 계약내용과 다를 경우 상품 수령 후 3개월 이내, 그 사실을 안 날 또는 알 수 있었던 날로부터 30일 이내.</p>
+          <span>둘 중 하나 경과 시 반품/교환 불가 (판매자 반품배송비 부담)</span>
+        </li>
+      </ul> <!--d_sub-->
+    </div> <!--d_sub-->
+
+    <div class="d_sub">
+      <p class="sub_tt">반품/교환 불가능 사유</p>
+      <span class="sub_su">
+        아래의 경우 반품/교환이 불가능합니다.
+      </span>
+      <ul class="sub_list02">
+        <li>
+          <p>단순 변심 및 훼손으로 인한 교환 및 반품은 불가합니다.</p>
+        </li>
+        <li>
+          <p>식물의 특성상 환불이 불가합니다.</p>
+        </li>
+        <li>
+          <p>배송 중 문제가 발생한 부분에 한해 사진과 함께 문의 주시면 빠른 처리 도와드리겠습니다.</p>
+        </li>
+      </ul> <!--d_sub-->
+    </div> <!--d_sub-->
+
+  </section> <!--delivery-->
+
+  <div class="rec_title" id="recommend">추천</div>
+  <div class="rec x_roll"></div>
+
+
+
+
+
+
+  <footer class="footer_outer">
+    <div class="f_top">
+      <a href="../index.html" class="f_logo">
+        <img src="../img/logo_footer.png" alt="푸터로고">
+      </a>
+
+      <div class="sns">
+        <a href="http://www.youtube.com" class="youtube">
+          <img src="../img/youtube_icon.png" alt="유튜브">
+        </a>
+        <a href="http://www.instagram.com" class="insta">
+          <img src="../img/instagram_icon.png" alt="인스타">
+        </a>
+      </div>
+    </div> <!--f_top-->
+
+    <p class="f_name">(주) 그리니쉬 <a href="./html/sub.html">브랜드소개 ></a></p>
+
+    <p class="f_info">대표이사 양지은 | 사업자등록번호 123-45-678910 | 통신판매업신고번호 제2015-부산진구-1234호 | 개인정보보호책임자 양지은 | 대표전화 1234-1234 |
+      FAX 051-1 23-4567 | greenish@naver.com | 부산광역시 부산진구 양정동 123번길 45 | <a
+        href="./html/sub.html">instagram@greenish_p</a> | <a href="./html/sub.html">youtube</a></p>
+
+    <div class="aco01 aco">
+      <p class="aco_title">고객센터 1234-1234<i class="fa-solid fa-caret-down"></i></p>
+      <ul class="aco_inner">
+        <li>평일09:00 ~ 18:00</li>
+        <li>(점심시간 12:00 ~ 13:00)</li>
+        <li>토/일/공휴일 휴무</li>
+        <li><a href="./html/sub.html">고객센터게시판 ></a></li>
+      </ul>
+    </div>
+
+    <div class="aco02 aco">
+      <p class="aco_title">무통장 입금 안내<i class="fa-solid fa-caret-down"></i></p>
+      <ul class="aco_inner">
+        <li>카카오뱅크</li>
+        <li>3333-01-23456-78</li>
+        <li>예금주명: 그리니쉬</li>
+      </ul>
+    </div>
+
+    <div class="aco03 aco">
+      <p class="aco_title">반품 주소 안내<i class="fa-solid fa-caret-down"></i></p>
+      <ul class="aco_inner">
+        <li>주소 : 부산광역시 부산진구 양정동 123번길 45</li>
+        <li>우편번호 : 123-123</li>
+        <li><a href="./html/sub.html">배송조회 안내 ></a></li>
+      </ul>
+    </div>
+  </footer> <!--footer_outer-->
+
+
+
+  <div id="top">
+    <a href="#header">
+      <img src="../img/top_btn.png" alt="탑버튼">
+    </a>
+  </div>
+
+
+  <div class="modal_outer">
+    <div class="cart_modal">
+      <p>장바구니에 상품을 담았어요</p>
+      <div class="modal_btn">
+        <button type="button" class="go_shop">쇼핑계속하기</button>
+        <a href="./html/sub.html" class="go_cart">장바구니로</a>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="nav_wrap">
+    <section class="selector_box">
+      <select id="sel_plant">
+        <option value="">식물 선택</option>
+        <option value="plant01">스프링골풀 손잡이 그린</option>
+        <option value="plant02">스프링골풀 손잡이 블루</option>
+      </select>
+
+      <select id="act_pro">
+        <option value="">추가 상품</option>
+        <option value="ribbon">리본추가(+3,000원)</option>
+        <option value="pick">메세지픽 추가(+3,000원)</option>
+      </select>
+
+      <div class="textarea_wrap">
+        <textarea name="message" id="message" placeholder=" " maxlength="20"></textarea>
+        <div class="guide">
+          추가 상품 선택시 메세지 작성(필수)<br>
+          (최대20자 / 리본선택 시 좌우 구분하여 작성)
+        </div>
+      </div>
+
+      <div class="buy_box">
+        <section class="buy_pro">
+          <p class="pro_name">스프링골풀 손잡이 그린</p>
+          <p class="pro_option">리본추가(+3,000원)</p>
+          <p class="pro_text">
+            좌: 개업축하해요, 우: 그리니쉬대표
+          </p>
+
+          <div id="close_buy">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+
+          <div class="count">
+            <div class="count-control">
+              <button id="minus"><i class="fa-solid fa-minus"></i></button>
+              <span class="count_box">1</span>
+              <button id="plus"><i class="fa-solid fa-plus"></i></button>
+            </div> <!--count-control-->
+
+            <p class="price">27,000<span>원</span></p>
+          </div>
+        </section>
+      </div>
+
+      <div class="total">
+        <p>배송비 <span>3500원</span></p>
+        <p class="last_total">주문금액 <span>30,500원</span></p>
+      </div>
+    </section>
+  </section> <!--nav_wrap-->
+
+  <section class="detail_nav">
+    <div class="nav_zim"><i class="fa-regular fa-heart"></i></div>
+    <div class="nav_btn">
+      <button type="button" class="cart">장바구니</button>
+      <button type="button" class="buy">바로구매</button>
+    </div>
+  </section>
+
+</body>
+
+</html>

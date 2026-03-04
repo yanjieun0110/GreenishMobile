@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greenish</title>
+  <link rel="shortcut icon" href="../img/logo_s_NEWcopy.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="../css/sub.css">
+
+  <!--jQuery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="../js/sub.js"></script>
+
+  <!--scrollTo-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Nanum Gothic", sans-serif;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    li {
+      list-style: none;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header" id="header">
+    <a href="../index.html" class="logo">
+      <img src="../img/logo_s_NEWcopy.png" alt="로고">
+    </a>
+
+    <p id="h_title"><a href="./sub.html">식물</a></p>
+
+    <div class="h_icon">
+      <i class="fa-solid fa-magnifying-glass" id="search"></i>
+      <i class="fa-solid fa-bars" id="hambergur"></i>
+    </div>
+  </header> <!--header-->
+
+
+  <section class="search_wrap">
+    <header class="s_header" id="s_header">
+      <p>검색</p>
+      <div class="s_close"><i class="fa-solid fa-xmark"></i></div>
+    </header> <!--s_header-->
+
+    <div class="search_box">
+      <input type="search" placeholder="검색어를 입력하세요">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+
+    <hr>
+
+    <p class="s_title">인기 검색어</p>
+    <ol id="pop">
+      <li><a href="../html/sub.html">공기정화</a></li>
+      <li><a href="../html/sub.html">개업</a></li>
+      <li><a href="../html/sub.html">집들이</a></li>
+      <li><a href="../html/sub.html">화분커버</a></li>
+    </ol>
+
+    <p class="s_title">베스트</p>
+    <ul id="best">
+      <li><a href="./detail.html">
+        <div class="best_img"><img src="../img/best01.jpg" alt="베스트01"></div>
+        <div class="txt">
+          <p>[식물+화분커버] 나비란 공기정화식물</p>
+          <p>32,000원<span>23%</span></p>
+        </div>
+      </a></li>
+      <li><a href="./detail.html">
+        <div class="best_img"><img src="../img/best02.jpg" alt="베스트02"></div>
+        <div class="txt">
+          <p>박쥐란 현무암 화산석 돌화분</p>
+          <p>48,000원<span>12%</span></p>
+        </div>
+      </a></li>
+      <li><a href="./detail.html">
+        <div class="best_img"><img src="../img/best03.jpg" alt="베스트03"></div>
+        <div class="txt">
+          <p>[식물+화분커버] 이오난사 공기정화식물</p>
+          <p>22,000원<span>12%</span></p>
+        </div>
+      </a></li>
+      <li><a href="./detail.html">
+        <div class="best_img"><img src="../img/best04.jpg" alt="베스트04"></div>
+        <div class="txt">
+          <p>필로덴드론 공기정화식물</p>
+          <p>35,900원</p>
+        </div>
+      </a></li>
+    </ul>
+  </section> <!--search_wrap-->
+  
+
+
+  <ul class="gnb">
+    <li class="gnb_chk tab_btn">전체</li>
+    <li class="tab_btn">행잉식물</li>
+    <li class="tab_btn">소형식물</li>
+    <li class="tab_btn">공기정화</li>
+    <li class="tab_btn">선인장/다육식물</li>
+  </ul> <!--gnb-->
+
+  <nav class="ham_outer">
+    <div class="ham_top">
+      <p class="ham_title">Greenish <span><i class="fa-solid fa-xmark" id="ham_close"></i></span></p>
+      <p>로그인 후 더 많은 기능을 이용할 수 있어요! </p>
+      <div class="top_btn">
+        <button type="button" class="login">로그인</button>
+        <button type="button" class="join">회원가입</button>
+      </div>
+    </div> <!--ham_top-->
+
+    <hr>
+
+    <div class="lnb_wrap">
+      <ul class="lnb_title" id="lnb_title">
+        <li class="lnb_chk">베스트</li>
+        <li>전체상품</li>
+        <li>식물</li>
+        <li>화분</li>
+        <li>선물/세트</li>
+        <li>쇼퍼블</li>
+        <li>브랜드 소개</li>
+        <li>고객센터</li>
+      </ul>
+
+      <div class="lnb_sub" id="lnb_sub">
+        <ul class="best_gnb" id="best_gnb">
+          <li><a href="./sub.html">베스트</a></li>
+        </ul>
+
+        <ul class="all_gnb" id="all_gnb">
+          <li><a href="./sub.html">전체상품</a></li>
+        </ul>
+
+        <ul class="plant" id="plant">
+          <li><a href="./sub.html">전체</a></li>
+          <li><a href="./sub.html">행잉식물</a></li>
+          <li><a href="./sub.html">소형식물</a></li>
+          <li><a href="./sub.html">공기정화</a></li>
+          <li><a href="./sub.html">선인장/다육식물</a></li>
+        </ul>
+
+        <ul class="pot" id="pot">
+          <li><a href="./sub.html">전체</a></li>
+          <li><a href="./sub.html">단독화분</a></li>
+          <li><a href="./sub.html">화분커버</a></li>
+        </ul>
+
+        <ul class="set_gnb" id="set_gnb">
+          <li><a href="./sub.html">전체</a></li>
+          <li><a href="./sub.html">식물+커버</a></li>
+          <li><a href="./sub.html">선물용식물</a></li>
+        </ul>
+
+        <ul class="shoppable" id="shoppable">
+          <li><a href="./sub.html">쇼퍼블</a></li>
+        </ul>
+
+        <ul class="brand" id="brand">
+          <li><a href="./sub.html">브랜드 소개</a></li>
+        </ul>
+
+        <ul class="center" id="center">
+          <li><a href="./sub.html">고객센터</a></li>
+        </ul>
+      </div>
+    </div> <!--lnb_wrap-->
+  </nav> <!--ham_outer-->
+
+
+  <div class="title">
+    <p>베스트</p>
+  </div>
+  <section class="x_roll best"></section>
+  <hr>
+
+    <section class="tab_box" id="tab_box">
+    <section class="card tab01"></section>
+    <section class="card tab02"></section>
+    <section class="card tab03"></section>
+    <section class="card tab04"></section>
+    <section class="card tab05"></section>
+    
+  </section> <!--tab_box-->
+
+  <ul class="pagination">
+    <li><i class="fa-solid fa-angles-left"></i></li>
+    <li><i class="fa-solid fa-angle-left"></i></li>
+    <li class="num1 num num_chk">1</li>
+    <li class="num2 num">2</li>
+    <li class="num3 num">3</li>
+    <li class="num4 num">4</li>
+    <li class="num5 num">5</li>
+    <li><i class="fa-solid fa-angle-right"></i></li>
+    <li><i class="fa-solid fa-angles-right"></i></li>
+  </ul> <!--pagination-->
+
+
+  <footer class="footer_outer">
+    <div class="f_top">
+      <a href="../index.html" class="f_logo">
+        <img src="../img/logo_footer.png" alt="푸터로고">
+      </a>
+
+      <div class="sns">
+        <a href="http://www.youtube.com" class="youtube">
+          <img src="../img/youtube_icon.png" alt="유튜브">
+        </a>
+        <a href="http://www.instagram.com" class="insta">
+          <img src="../img/instagram_icon.png" alt="인스타">
+        </a>
+      </div>
+    </div> <!--f_top-->
+
+    <p class="f_name">(주) 그리니쉬 <a href="./html/sub.html">브랜드소개 ></a></p>
+
+    <p class="f_info">대표이사 양지은 | 사업자등록번호 123-45-678910 | 통신판매업신고번호 제2015-부산진구-1234호 | 개인정보보호책임자 양지은 | 대표전화 1234-1234 |
+      FAX 051-1 23-4567 | greenish@naver.com | 부산광역시 부산진구 양정동 123번길 45 | <a
+        href="./html/sub.html">instagram@greenish_p</a> | <a href="./html/sub.html">youtube</a></p>
+
+    <div class="aco01 aco">
+      <p class="aco_title">고객센터 1234-1234<i class="fa-solid fa-caret-down"></i></p>
+      <ul class="aco_inner">
+        <li>평일09:00 ~ 18:00</li>
+        <li>(점심시간 12:00 ~ 13:00)</li>
+        <li>토/일/공휴일 휴무</li>
+        <li><a href="./html/sub.html">고객센터게시판 ></a></li>
+      </ul>
+    </div>
+
+    <div class="aco02 aco">
+      <p class="aco_title">무통장 입금 안내<i class="fa-solid fa-caret-down"></i></p>
+      <ul class="aco_inner">
+        <li>카카오뱅크</li>
+        <li>3333-01-23456-78</li>
+        <li>예금주명: 그리니쉬</li>
+      </ul>
+    </div>
+
+    <div class="aco03 aco">
+      <p class="aco_title">반품 주소 안내<i class="fa-solid fa-caret-down"></i></p>
+      <ul class="aco_inner">
+        <li>주소 : 부산광역시 부산진구 양정동 123번길 45</li>
+        <li>우편번호 : 123-123</li>
+        <li><a href="./html/sub.html">배송조회 안내 ></a></li>
+      </ul>
+    </div>
+  </footer> <!--footer_outer-->
+
+  <ul class="bottom_nav">
+    <li>
+      <a href="../index.html">
+        <i class="fa-solid fa-house"></i>
+        <p>home</p>
+      </a>
+    </li>
+
+    <li>
+      <a href="./sub.html">
+        <i class="fa-regular fa-heart"></i>
+        <p>찜</p>
+      </a>
+    </li>
+
+    <li>
+      <a href="./sub.html">
+        <i class="fa-brands fa-pagelines"></i>
+        <p>식물관리</p>
+      </a>
+    </li>
+
+    <li>
+      <a href="./sub.html">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <p>장바구니</p>
+      </a>
+    </li>
+
+    <li>
+      <a href="./sub.html">
+        <i class="fa-solid fa-user"></i>
+        <p>마이페이지</p>
+      </a>
+    </li>
+  </ul> <!--bottom_nav-->
+
+  <div id="top">
+    <a href="#header">
+      <img src="../img/top_btn.png" alt="탑버튼">
+    </a>
+  </div>
+
+  <div class="modal_outer">
+    <div class="cart_modal">
+      <p>장바구니에 상품을 담았어요</p>
+      <div class="modal_btn">
+        <button type="button" class="go_shop">쇼핑계속하기</button>
+        <a href="./html/sub.html" class="go_cart">장바구니로</a>
+      </div>
+    </div>
+  </div>
+
+
+  
+</body>
+
+</html>

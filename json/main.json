@@ -1,0 +1,179 @@
+{
+  "new" : [
+    {
+      "id" : 1,
+      "img" : "../img/pop01.jpg",
+      "name" : "[식물+화분커버] 피쉬본 생선뼈 선인장",
+      "won_price":"29,500원",
+      "price" : 29500,
+      "dis_pro" : "35%",
+      "discount" : 35
+    },
+
+    {
+      "id" : 2,
+      "img" : "../img/pop02.jpg",
+      "name" : "[식물+화분커버] 이오난사 공기정화식물",
+      "won_price":"22,000원",
+      "price" : 22000,
+      "dis_pro" : "12%",
+      "discount" : 12
+    },
+
+    {
+      "id" : 3,
+      "img" : "../img/pop03.jpg",
+      "name" : "무늬 아비스 공기정화식물",
+      "won_price":"25,000원",
+      "price" : 25000
+    },
+
+    {
+      "id" : 4,
+      "img" : "../img/pop04.jpg",
+      "name" : "몬스테라 공기정화식물",
+      "won_price":"48,000원",
+      "price" : 48000
+    }
+  ],
+
+  "recommend" : [
+    {
+      "id" : 1,
+      "img" : "../img/rec01.jpg",
+      "name" : "행잉 립살리스 화이트 옐로우팟",
+      "won_price":"48,000원",
+      "price" : 48000,
+      "dis_pro" : "12%",
+      "discount" : 12
+    },
+ 
+    {
+      "id" : 2,
+      "img" : "../img/rec02.jpg",
+      "name" : "[식물+화분커버] 나비란 공기정화식물",
+      "won_price":"32,000원",
+      "price" : 32000,
+      "dis_pro" : "23%",
+      "discount" : 23
+    },
+
+    {
+      "id" : 3,
+      "img" : "../img/rec03.jpg",
+      "name" : "아비스고사리 키우기쉬운식물",
+      "won_price":"22,000원",
+      "price" : 22000,
+      "dis_pro" : "8%",
+      "discount" : 8
+    },
+
+    {
+      "id" : 4,
+      "img" : "../img/rec04.jpg",
+      "name" : "[식물+화분커버] 이오난사 공기정화식물",
+      "won_price":"22,000원",
+      "price" : 22000,
+      "dis_pro" : "12%",
+      "discount" : 12
+    }
+  ],
+
+  "set" : [
+    {
+      "id" : 1,
+      "img" : "../img/set01.jpg",
+      "name" : "[식물+화분커버] 미니보석금전수",
+      "won_price":"32,000원",
+      "price" : 32000,
+      "dis_pro" : "38%",
+      "discount" : 38
+    },
+ 
+    {
+      "id" : 2,
+      "img" : "../img/set02.jpg",
+      "name" : "[식물+화분커버] 수형 바로크벤자민",
+      "won_price":"43,000원",
+      "price" : 43000
+    },
+
+    {
+      "id" : 3,
+      "img" : "../img/set03.jpg",
+      "name" : "[식물+화분커버] 나비란 공기정화식물",
+      "won_price":"32,000원",
+      "price" : 32000,
+      "dis_pro" : "23%",
+      "discount" : 23
+    },
+
+    {
+      "id" : 4,
+      "img" : "../img/set04.jpg",
+      "name" : "[식물+화분커버] 피쉬본 생선뼈 선인장",
+      "won_price":"29,500원",
+      "price" : 29500,
+      "dis_pro" : "35%",
+      "discount" : 35
+    }
+  ],
+
+  "all" : [
+    {
+      "id" : 1,
+      "img" : "../img/all01.jpg",
+      "name" : "[선물용식물]스프링 골풀 헤비부츠 팟",
+      "won_price":"33,500원",
+      "price" : 33500,
+      "dis_pro" : "44%",
+      "discount" : 44
+    },
+ 
+    {
+      "id" : 2,
+      "img" : "../img/all02.jpg",
+      "name" : "황칠나무 컬링 공기정화식물",
+      "won_price":"48,000원",
+      "price" : 48000,
+      "dis_pro" : "12%",
+      "discount" : 12
+    },
+
+    {
+      "id" : 3,
+      "img" : "../img/all03.jpg",
+      "name" : "녹탑 다육이 미니 화분",
+      "won_price":"19,000원",
+      "price" : 19000
+    },
+
+    {
+      "id" : 4,
+      "img" : "../img/all04.jpg",
+      "name" : "[선물용식물] 소엽 풍란 미니 동양난",
+      "won_price":"26,000원",
+      "price" : 26000
+    },
+
+    {
+      "id" : 5,
+      "img" : "../img/set01.jpg",
+      "name" : "[식물+화분커버] 미니보석금전수",
+      "won_price":"32,000원",
+      "price" : 32000,
+      "dis_pro" : "38%",
+      "discount" : 38
+    },
+
+    {
+      "id" : 6,
+      "img" : "../img/set03.jpg",
+      "name" : "[식물+화분커버] 나비란 공기정화식물",
+      "won_price":"32,000원",
+      "price" : 32000,
+      "dis_pro" : "23%",
+      "discount" : 23
+    }
+  ]
+}

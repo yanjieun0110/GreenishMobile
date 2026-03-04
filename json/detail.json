@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "img": "../img/rec03.jpg",
+    "name": "아비스고사리 키우기쉬운식물",
+    "won_price": "22,000원",
+    "price": 22000,
+    "dis_pro": "8%",
+    "discount": 8
+  },
+  {
+    "id": 2,
+    "img": "../img/de_rec.jpg",
+    "name": "[단독화분] 타일화분 인테리어 화분",
+    "won_price": "13,900원",
+    "price": 13900,
+    "dis_pro": "20%",
+    "discount": 20
+  },
+  {
+    "id": 3,
+    "img": "../img/rec04.jpg",
+    "name": "[식물+화분커버] 이오난사 공기정화식물",
+    "won_price": "22,000원",
+    "price": 22000,
+    "dis_pro": "12%",
+    "discount": 12
+  },
+  {
+    "id": 4,
+    "img": "../img/set01.jpg",
+    "name": "[식물+화분커버] 미니보석금전수",
+    "won_price": "32,000원",
+    "price": 32000,
+    "dis_pro": "38%",
+    "discount": 38
+  }
+]
