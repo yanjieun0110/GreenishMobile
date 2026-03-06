@@ -291,13 +291,16 @@ document.querySelector('.back').addEventListener('click', function (e) {
 ```
 
 /* 이미지 클릭 이벤트 */
+```js
 $('.small_img li img').on('click', function () {
   const src = $(this).attr('src');
 
   $('.big_img').css('background-image', `url(${src})`);
 });
+```
 
 /* move_bar hashtag scrollTo */
+```js
 $('.move_bar li a').on('click', function (e) {
   e.preventDefault();
 
@@ -309,8 +312,10 @@ $('.move_bar li a').on('click', function (e) {
 
   $(window).scrollTo(offsetTop, 800);
 });
+```
 
 /* data toggle */
+```js
 $('.data_btn').on('click', function () {
   $('.data02').toggle();
 
@@ -322,3 +327,4 @@ $('.data_btn').on('click', function () {
     $(this).find('p').text('상품설명 닫기');
   }
 });
+```
