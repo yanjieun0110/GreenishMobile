@@ -5,7 +5,7 @@
 코딩 기간 : 2026.01.06 ~ 2026.01.20 (15일)
 
 ## 🛠️ Tech Stack
-1. HTML 5
+1. HTML
 2. CSS
 3. JavaScript
 4. jQurey
