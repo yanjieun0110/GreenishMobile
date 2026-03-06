@@ -70,6 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 ```
+##
 
 /* sub 레이아웃 */
 ```js
@@ -150,6 +151,28 @@ fetch('../json/sub.json')
         layout(sortType);
       });
 ```
+/* 탭전환 */
+```js
+      $('.gnb li').on('click', function () {
+      $('.gnb li').removeClass('gnb_chk');
+      $(this).addClass('gnb_chk');
+
+      let index = $(this).index();
+      $('.tab_box > section').hide().eq(index).css('display', 'flex');
+
+      for (let key in data) {
+        data[key] = JSON.parse(JSON.stringify(originData[key]));
+      }
+      
+      layout(''); 
+    });
+
+      layout();
+
+    });
+```
+
+##
 
 /* 찜하기 jQuery */
 ```js
