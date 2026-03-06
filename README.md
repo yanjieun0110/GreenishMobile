@@ -180,6 +180,9 @@ $(document).on('click', '.heart_icon', function() {
   $(this).toggleClass('fa-regular fa-solid heart_active');
 });
 ```
+<img width="176" height="250" alt="image" src="https://github.com/user-attachments/assets/36e6b34f-3d97-4399-8514-1b9497bc8ebc" />
+<img width="174" height="251" alt="image" src="https://github.com/user-attachments/assets/87a39f52-ddac-4343-9e2a-e5ed9f740048" />
+
 
 /* 장바구니 모달 jQuery */
 ```js
@@ -191,6 +194,8 @@ $('.go_shop').on('click', function() {
   $('.modal_outer').css('display', 'none');
 });
 ```
+<img width="414" height="274" alt="image" src="https://github.com/user-attachments/assets/0f1984e5-dff9-4733-bf8d-7c437c25933a" />
+
 
 /* lnb_title li 클릭이벤트 jQuery */
 ```js
@@ -257,6 +262,8 @@ $('.aco_title').on('click', function() {
     icon.toggleClass('fa-caret-down fa-caret-up');
 });
 ```
+<img width="403" height="215" alt="image" src="https://github.com/user-attachments/assets/cf51d66d-d701-45ce-8faf-191062fb3f8b" />
+
 
 /* top_event jQuery */
 ```js
@@ -274,3 +281,44 @@ $('#top').on('click',function(e){
   $(window).scrollTo(this.hash || 0, 800);
 });
 ```
+
+/* 뒤로가기 */
+```js
+document.querySelector('.back').addEventListener('click', function (e) {
+    e.preventDefault();
+    history.back();
+});
+```
+
+/* 이미지 클릭 이벤트 */
+$('.small_img li img').on('click', function () {
+  const src = $(this).attr('src');
+
+  $('.big_img').css('background-image', `url(${src})`);
+});
+
+/* move_bar hashtag scrollTo */
+$('.move_bar li a').on('click', function (e) {
+  e.preventDefault();
+
+  $('.move_bar li').removeClass('bar_chk');
+  $(this).closest('li').addClass('bar_chk');
+
+  let target = this.hash;
+  let offsetTop = $(target).offset().top - 115;
+
+  $(window).scrollTo(offsetTop, 800);
+});
+
+/* data toggle */
+$('.data_btn').on('click', function () {
+  $('.data02').toggle();
+
+  $(this).find('i').toggleClass('fa-angle-down fa-angle-up');
+
+  if ($(this).hasClass('fa-angle-down')) {
+    $(this).find('p').text('상품설명 더보기');
+  } else {
+    $(this).find('p').text('상품설명 닫기');
+  }
+});
