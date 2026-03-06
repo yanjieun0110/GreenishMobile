@@ -205,6 +205,45 @@ $('#lnb_title li').on('click', function () {
 })
 ```
 
+ /* pagination */
+ ```js
+  $('.pagination li.num').on('click', function () {
+    $('.pagination li.num').removeClass('num_chk');
+    $(this).addClass('num_chk');
+  });//num
+
+  $('.pagination li i').on('click', function () {
+    let num = $('.pagination li.num');
+    let chk = $('.pagination li.num.num_chk');
+    let prev = chk.prev('.num');
+    let next = chk.next('.num');
+
+    if ($(this).hasClass('fa-angles-left')) {
+      num.removeClass('num_chk');
+      $('.pagination li.num:first').addClass('num_chk');
+    } //제일처음
+
+    else if ($(this).hasClass('fa-angle-left')) {
+      if (prev.length > 0) {
+        chk.removeClass('num_chk');
+        prev.addClass('num_chk');
+      }
+    } //이전
+
+    else if ($(this).hasClass('fa-angle-right')) {
+      if (next.length > 0) {
+        chk.removeClass('num_chk');
+        next.addClass('num_chk');
+      }
+    } //다음
+
+    else if ($(this).hasClass('fa-angles-right')) {
+      num.removeClass('num_chk');
+      $('.pagination li.num:last').addClass('num_chk');
+    } //제일마지막
+  });
+```
+
 /* 푸터 아코디언 */
 ```js
 $('.aco_title').on('click', function() {
