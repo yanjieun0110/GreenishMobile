@@ -22,8 +22,7 @@ CSS
 <img width="1110" height="510" alt="image" src="https://github.com/user-attachments/assets/5c4e4b1b-db47-4d02-b3b4-26854f27b67c" />
 
 <mobile_site Swiper.js 구현>
-<img width="424" height="401" alt="image" src="https://github.com/user-attachments/assets/ddfc1da9-59a4-4697-8cf0-436791595200" />
-
+<img width="1054" height="486" alt="image" src="https://github.com/user-attachments/assets/d5f98215-0287-4515-9cc2-ce9e5a07e4a6" />
 
 /* web_서브베너 캐러셀 html */
 ```html
@@ -393,18 +392,93 @@ fetch('../json/sub.json')
 ```
 
 ##
+/* web_디테일 이미지 hover 마이크로 애미매이션 css */
+```css
+.detail_outer .detail .detail_left .pd_small_img li:hover img {
+  transform: scale(1.1);
+}
+```
 
-/* 찜하기 jQuery */
+/* mobile_디테일 이미지 클릭 이벤트 */
+<img width="395" height="498" alt="image" src="https://github.com/user-attachments/assets/0cdd48e9-a6d1-4965-a1d2-de4159f27251" />
+<img width="400" height="500" alt="image" src="https://github.com/user-attachments/assets/d1b41d0a-8a6d-4aa1-81cf-49feb8e3f68b" />
+
+```js
+$('.small_img li img').on('click', function () {
+  const src = $(this).attr('src');
+
+  $('.big_img').css('background-image', `url(${src})`);
+});
+```
+
+/* web_move bar css */
+```css
+.move_bar {
+  width: 804px; height: 50px;
+  margin: 0 auto;
+  background-color: #eee;
+  margin-bottom: 5px;
+}
+.move_bar ul {
+  width: 804px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.move_bar ul li {
+  width: 200px;  
+  text-align: center;
+  line-height: 48px;
+  cursor: pointer;
+}
+.move_bar01 ul li:nth-child(1) {
+  border-bottom: 1px solid #00980A;
+}
+.move_bar02 ul li:nth-child(2) {
+  border-bottom: 1px solid #00980A;
+}
+.move_bar03 ul li:nth-child(3) {
+  border-bottom: 1px solid #00980A;
+}
+.move_bar04 ul li:nth-child(4) {
+  border-bottom: 1px solid #00980A;
+}
+
+.move_bar ul li a {
+  font-size: 20px;
+}
+.move_bar ul li:hover a {
+  color: #17451F;
+}
+```
+
+/* mobile_move_bar hashtag scrollTo */
+```js
+$('.move_bar li a').on('click', function (e) {
+  e.preventDefault();
+
+  $('.move_bar li').removeClass('bar_chk');
+  $(this).closest('li').addClass('bar_chk');
+
+  let target = this.hash;
+  let offsetTop = $(target).offset().top - 115;
+
+  $(window).scrollTo(offsetTop, 800);
+});
+```
+
+
+/* mobile_찜하기 jQuery */
+<img width="176" height="250" alt="image" src="https://github.com/user-attachments/assets/36e6b34f-3d97-4399-8514-1b9497bc8ebc" />
+<img width="174" height="251" alt="image" src="https://github.com/user-attachments/assets/87a39f52-ddac-4343-9e2a-e5ed9f740048" />
 ```js
 $(document).on('click', '.heart_icon', function() {
   $(this).toggleClass('fa-regular fa-solid heart_active');
 });
 ```
-<img width="176" height="250" alt="image" src="https://github.com/user-attachments/assets/36e6b34f-3d97-4399-8514-1b9497bc8ebc" />
-<img width="174" height="251" alt="image" src="https://github.com/user-attachments/assets/87a39f52-ddac-4343-9e2a-e5ed9f740048" />
 
+/* mobile_장바구니 모달 jQuery */
+<img width="414" height="274" alt="image" src="https://github.com/user-attachments/assets/0f1984e5-dff9-4733-bf8d-7c437c25933a" />
 
-/* 장바구니 모달 jQuery */
 ```js
 $(document).on('click', '.cart_icon', function() {
   $('.modal_outer').css('display', 'flex');
@@ -414,10 +488,11 @@ $('.go_shop').on('click', function() {
   $('.modal_outer').css('display', 'none');
 });
 ```
-<img width="414" height="274" alt="image" src="https://github.com/user-attachments/assets/0f1984e5-dff9-4733-bf8d-7c437c25933a" />
 
+/* mobile_lnb_title li 클릭이벤트 jQuery */
+<img width="414" height="562" alt="image" src="https://github.com/user-attachments/assets/f6170ae7-b5a3-4716-8fa1-3f8096347504" />
+<img width="428" height="704" alt="image" src="https://github.com/user-attachments/assets/90d55bb3-b243-46f4-a47a-9adf472c654d" />
 
-/* lnb_title li 클릭이벤트 jQuery */
 ```js
 $('#lnb_title li').on('click', function () {
   $('#lnb_title li').removeClass('lnb_chk');
@@ -430,7 +505,10 @@ $('#lnb_title li').on('click', function () {
 })
 ```
 
- /* pagination */
+ /* mobile_pagination */
+ <img width="328" height="59" alt="image" src="https://github.com/user-attachments/assets/e75639ef-34e1-4ac9-8db4-e66b524a7ba9" />
+ <img width="319" height="76" alt="image" src="https://github.com/user-attachments/assets/1b5b9db0-e0ef-4197-b863-a2beb6cefbbb" />
+
  ```js
   $('.pagination li.num').on('click', function () {
     $('.pagination li.num').removeClass('num_chk');
@@ -469,7 +547,9 @@ $('#lnb_title li').on('click', function () {
   });
 ```
 
-/* 푸터 아코디언 */
+/* mobile_푸터 아코디언 */
+<img width="403" height="215" alt="image" src="https://github.com/user-attachments/assets/cf51d66d-d701-45ce-8faf-191062fb3f8b" />
+
 ```js
 $('.aco_title').on('click', function() {
    let icon = $(this).find('i');
@@ -482,10 +562,8 @@ $('.aco_title').on('click', function() {
     icon.toggleClass('fa-caret-down fa-caret-up');
 });
 ```
-<img width="403" height="215" alt="image" src="https://github.com/user-attachments/assets/cf51d66d-d701-45ce-8faf-191062fb3f8b" />
 
-
-/* top_event jQuery */
+/* mobile_탑버튼 jQuery */
 ```js
 $(window).scroll(function(){
   if($(window).scrollTop() >= 250) {
@@ -502,7 +580,7 @@ $('#top').on('click',function(e){
 });
 ```
 
-/* 뒤로가기 */
+/* mobile_뒤로가기 */
 ```js
 document.querySelector('.back').addEventListener('click', function (e) {
     e.preventDefault();
@@ -510,31 +588,76 @@ document.querySelector('.back').addEventListener('click', function (e) {
 });
 ```
 
-/* 이미지 클릭 이벤트 */
-```js
-$('.small_img li img').on('click', function () {
-  const src = $(this).attr('src');
-
-  $('.big_img').css('background-image', `url(${src})`);
-});
+/* web_move bar html */
+```html
+<nav class="move_bar01 move_bar" id="data">
+    <ul>
+        <li><a href="#data">상품정보</a></li>
+        <li><a href="#review">리뷰</a></li>
+        <li><a href="#delivery">배송/환불</a></li>
+        <li><a href="#recommend">추천</a></li>
+   </ul>
+</nav>
 ```
 
-/* move_bar hashtag scrollTo */
-```js
-$('.move_bar li a').on('click', function (e) {
-  e.preventDefault();
 
-  $('.move_bar li').removeClass('bar_chk');
-  $(this).closest('li').addClass('bar_chk');
+/* web_상세페이지 토글 html */
+<img width="863" height="264" alt="image" src="https://github.com/user-attachments/assets/e08d180b-e82b-4401-92cf-c9c1cd0b2b74" />
+<img width="819" height="156" alt="image" src="https://github.com/user-attachments/assets/f9e0c94c-a4b3-4dbd-9151-bccdbfb0fd75" />
 
-  let target = this.hash;
-  let offsetTop = $(target).offset().top - 115;
 
-  $(window).scrollTo(offsetTop, 800);
-});
+```html
+<input type="checkbox" id="data_btn">
+<div class="detail_data">
+    <img src="./img/detail_page01.png" alt="상품설명01">
+    <img src="./img/detail_page02.png" alt="상품설명02">
+
+    <label for="data_btn" class="open">상세정보 펼쳐보기 <i class="fa-solid fa-angle-down"></i></label>
+    <label for="data_btn" class="close">상세정보 닫기 <i class="fa-solid fa-chevron-up"></i></label>
+</div>
 ```
 
-/* data toggle */
+/* web_상세페이지 토글 css */
+```css
+#data_btn {display: none;}
+#data_btn:checked ~ .detail_data img:nth-child(2) {display: block;}
+#data_btn ~ .detail_data img:nth-child(2) {display: none;}
+
+#data_btn ~ .detail_data label,
+#data_btn:checked ~ .detail_data label {display: none;}
+#data_btn ~ .detail_data .open {display: block;}
+#data_btn:checked ~ .detail_data .close {display: block;}
+
+.detail_data label {
+  width: 804px; height: 50px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  color: #666;
+  border: 1px solid #666; box-sizing: border-box;
+  cursor: pointer;
+}
+.detail_data label i {
+   font-size: 24px; 
+   color: #666;
+}
+
+.detail_data .open{position: relative;}
+.detail_data .open::before {
+  content: '';
+  display: block;
+  width: 957px; height: 130px;
+  background: linear-gradient(transparent,white);
+  position: absolute;
+  top: -135px;
+}
+```
+
+
+/* mobile_상세페이지 토글 */
+<img width="477" height="70" alt="image" src="https://github.com/user-attachments/assets/f68b788e-3200-4eae-bf2e-216b98668074" />
+<img width="464" height="70" alt="image" src="https://github.com/user-attachments/assets/31786817-dbd9-49c4-a565-5da0c5d048e8" />
+
 ```js
 $('.data_btn').on('click', function () {
   $('.data02').toggle();
