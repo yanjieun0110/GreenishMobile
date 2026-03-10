@@ -472,8 +472,12 @@ $('.move_bar li a').on('click', function (e) {
 
 
 /* mobile_찜하기 jQuery */
+<br>
 <img width="176" height="250" alt="image" src="https://github.com/user-attachments/assets/36e6b34f-3d97-4399-8514-1b9497bc8ebc" />
+<br>
 <img width="174" height="251" alt="image" src="https://github.com/user-attachments/assets/87a39f52-ddac-4343-9e2a-e5ed9f740048" />
+<br>
+
 ```js
 $(document).on('click', '.heart_icon', function() {
   $(this).toggleClass('fa-regular fa-solid heart_active');
@@ -481,7 +485,9 @@ $(document).on('click', '.heart_icon', function() {
 ```
 
 /* mobile_장바구니 모달 jQuery */
+<br>
 <img width="414" height="274" alt="image" src="https://github.com/user-attachments/assets/0f1984e5-dff9-4733-bf8d-7c437c25933a" />
+<br>
 
 ```js
 $(document).on('click', '.cart_icon', function() {
@@ -494,8 +500,11 @@ $('.go_shop').on('click', function() {
 ```
 
 /* mobile_lnb_title li 클릭이벤트 jQuery */
+<br>
 <img width="414" height="562" alt="image" src="https://github.com/user-attachments/assets/f6170ae7-b5a3-4716-8fa1-3f8096347504" />
+<br>
 <img width="428" height="704" alt="image" src="https://github.com/user-attachments/assets/90d55bb3-b243-46f4-a47a-9adf472c654d" />
+<br>
 
 ```js
 $('#lnb_title li').on('click', function () {
@@ -510,8 +519,11 @@ $('#lnb_title li').on('click', function () {
 ```
 
  /* mobile_pagination */
+ <br>
  <img width="328" height="59" alt="image" src="https://github.com/user-attachments/assets/e75639ef-34e1-4ac9-8db4-e66b524a7ba9" />
+ <br>
  <img width="319" height="76" alt="image" src="https://github.com/user-attachments/assets/1b5b9db0-e0ef-4197-b863-a2beb6cefbbb" />
+ <br>
 
  ```js
   $('.pagination li.num').on('click', function () {
@@ -552,7 +564,9 @@ $('#lnb_title li').on('click', function () {
 ```
 
 /* mobile_푸터 아코디언 */
+<br>
 <img width="403" height="215" alt="image" src="https://github.com/user-attachments/assets/cf51d66d-d701-45ce-8faf-191062fb3f8b" />
+<br>
 
 ```js
 $('.aco_title').on('click', function() {
@@ -606,9 +620,11 @@ document.querySelector('.back').addEventListener('click', function (e) {
 
 
 /* web_상세페이지 토글 html */
+<br>
 <img width="863" height="264" alt="image" src="https://github.com/user-attachments/assets/e08d180b-e82b-4401-92cf-c9c1cd0b2b74" />
+<br>
 <img width="819" height="156" alt="image" src="https://github.com/user-attachments/assets/f9e0c94c-a4b3-4dbd-9151-bccdbfb0fd75" />
-
+<br>
 
 ```html
 <input type="checkbox" id="data_btn">
@@ -659,8 +675,11 @@ document.querySelector('.back').addEventListener('click', function (e) {
 
 
 /* mobile_상세페이지 토글 */
+<br>
 <img width="477" height="70" alt="image" src="https://github.com/user-attachments/assets/f68b788e-3200-4eae-bf2e-216b98668074" />
+<br>
 <img width="464" height="70" alt="image" src="https://github.com/user-attachments/assets/31786817-dbd9-49c4-a565-5da0c5d048e8" />
+<br>
 
 ```js
 $('.data_btn').on('click', function () {
